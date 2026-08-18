@@ -25,9 +25,8 @@ It provides ultra-smooth, whisper-quiet motor control and seamless BLE compatibi
 * **Microcontroller:** ESP32 (e.g., ESP32-WROOM-32)
 * **Motor Driver:** BTS7960 (43A High Power Driver)
 * **Step-Down Module:** LM2596 (To convert 24V to 5V for the ESP32)
-* **Power Supply:** 24V 5A~6A DC Adapter
-* **UI Components:** 100K Potentiometer (Dial), Tactile Switch (Mode Button), Standard LED Diode (Status Indicator)
-* **Motor:** 24V 120W Turbo Gear Motor (Standard T02 Motor)
+* **UI Components:** Tactile Switch (Mode Button), Standard LED Diode (Status Indicator)
+* **Safety & Wiring:** 16 AWG or thicker wire (for 24V lines), Electrical Tape (for insulation)
 
 ---
 

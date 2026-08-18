@@ -77,25 +77,15 @@ graph LR
     %% 선 색상 입히기 (정확한 인덱스 기반 계산)
     %% ----------------------------------------------------
     %% 🔴 24V 메인 플러스 (0, 1)
-    linkStyle 0,1 stroke:#e74c3c,stroke-width:4px,color:#c0392b;
-    
-    %% 🔵 24V 메인 마이너스 (2, 3)
-    linkStyle 2,3 stroke:#2980b9,stroke-width:4px,color:#2980b9;
-    
-    %% 🟠 5V / 3.3V 로직 플러스 (4, 6, 13)
-    linkStyle 4,6,13 stroke:#e67e22,stroke-width:2px,color:#d35400;
-    
-    %% ⚫ 로직 마이너스 제어 GND (5, 7, 9, 12, 14)
-    linkStyle 5,7,9,12,14 stroke:#2c3e50,stroke-width:2px,color:#2c3e50;
-    
-    %% 🟢 입력/출력 초록색 신호선 (8, 10, 11, 15, 16, 17, 18)
-    linkStyle 8,10,11,15,16,17,18 stroke:#27ae60,stroke-width:2px,color:#1e8449;
-    
-    %% 🔴 모터 구동 플러스 출력 (19)
-    linkStyle 19 stroke:#e74c3c,stroke-width:6px,color:#c0392b;
-    
-    %% 🔵 모터 구동 마이너스 출력 (20)
-    linkStyle 20 stroke:#2980b9,stroke-width:6px,color:#2980b9;
+    %% 선 색상 입히기
+    %% ----------------------------------------------------
+    linkStyle 0,1 stroke:red,stroke-width:4px;
+    linkStyle 2,3 stroke:blue,stroke-width:4px;
+    linkStyle 4,6,13 stroke:orange,stroke-width:2px;
+    linkStyle 5,7,9,12,14 stroke:gray,stroke-width:2px;
+    linkStyle 8,10,11,15,16,17,18 stroke:green,stroke-width:2px;
+    linkStyle 19 stroke:red,stroke-width:6px;
+    linkStyle 20 stroke:blue,stroke-width:6px;
 ```
 
 ---
