@@ -90,13 +90,13 @@ graph LR
     BTS ===|"M+"| Motor
     BTS ===|"M-"| Motor
 
-    linkStyle 0,2,4 stroke:#e74c3c,stroke-width:4px,color:#c0392b;
-    linkStyle 1,3,5 stroke:#2980b9,stroke-width:4px,color:#2980b9;
-    linkStyle 6,8,15 stroke:#e67e22,stroke-width:2px,color:#d35400;
-    linkStyle 7,9,11,14,16 stroke:#2c3e50,stroke-width:2px,color:#2c3e50;
-    linkStyle 10,12,13,17,18,19,20 stroke:#27ae60,stroke-width:2px,color:#1e8449;
-    linkStyle 21 stroke:#e74c3c,stroke-width:6px,color:#c0392b;
-    linkStyle 22 stroke:#2980b9,stroke-width:6px,color:#2980b9;
+    linkStyle 0,2,4 stroke:red,stroke-width:4px;
+    linkStyle 1,3,5 stroke:blue,stroke-width:4px;
+    linkStyle 6,8,15 stroke:orange,stroke-width:2px;
+    linkStyle 7,9,11,14,16 stroke:gray,stroke-width:2px;
+    linkStyle 10,12,13,17,18,19,20 stroke:green,stroke-width:2px;
+    linkStyle 21 stroke:red,stroke-width:6px;
+    linkStyle 22 stroke:blue,stroke-width:6px;
 ```
 
 ### 🔌 5핀 항공 커넥터 배선 (T02 순정 리모컨 연결)
