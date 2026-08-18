@@ -26,7 +26,7 @@
 * **모터 드라이버:** BTS7960 (43A 고출력 모터 드라이버)
 * **스텝다운(강하) 모듈:** LM2596 (24V 전원을 ESP32용 5V로 낮춰줌)
 * **전원 어댑터:** 24V 5A~6A DC 전원 공급 장치
-* **입력 장치:** 100K 전위차계(다이얼), 푸시 버튼(모드 변경 스위치)
+* **조작 및 표시 부품:** 100K 전위차계(다이얼), 택트 스위치(모드 변경 버튼), 일반 LED 다이오드 (상태 표시용)
 * **모터:** 24V 120W 터보 기어 모터 (T02 머신 규격)
 
 ---
@@ -49,14 +49,14 @@
 ```mermaid
 %%{init: {"flowchart": {"curve": "step", "nodeSpacing": 80, "rankSpacing": 120}}}%%
 graph LR
-    Power[24V 어댑터 전원]
-    StepDown[LM2596 강하 모듈]
+    Power["24V 어댑터 전원"]
+    StepDown["LM2596 강하 모듈"]
     ESP["E<br>S<br>P<br>3<br>2"]
-    Pot[유선 컨트롤러 (다이얼)]
-    Btn[푸시 버튼]
-    StatusLED[상태 표시 LED]
-    BTS[BTS7960 드라이버]
-    Motor((T02 모터))
+    Pot["유선 컨트롤러 (다이얼)"]
+    Btn["푸시 버튼"]
+    StatusLED["상태 표시 LED"]
+    BTS["BTS7960 드라이버"]
+    Motor(("T02 모터"))
 
     Power ===|"24V → LED"| Pot
     Power ===|"GND → LED"| Pot

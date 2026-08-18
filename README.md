@@ -26,7 +26,7 @@ It provides ultra-smooth, whisper-quiet motor control and seamless BLE compatibi
 * **Motor Driver:** BTS7960 (43A High Power Driver)
 * **Step-Down Module:** LM2596 (To convert 24V to 5V for the ESP32)
 * **Power Supply:** 24V 5A~6A DC Adapter
-* **Inputs:** 100K Potentiometer (Dial), Push Button (Mode Switch)
+* **UI Components:** 100K Potentiometer (Dial), Tactile Switch (Mode Button), Standard LED Diode (Status Indicator)
 * **Motor:** 24V 120W Turbo Gear Motor (Standard T02 Motor)
 
 ---
@@ -49,14 +49,14 @@ Just follow the labels printed on your boards. Connect the matching names!
 ```mermaid
 %%{init: {"flowchart": {"curve": "step", "nodeSpacing": 80, "rankSpacing": 120}}}%%
 graph LR
-    Power[24V Power]
-    StepDown[LM2596]
+    Power["24V Power"]
+    StepDown["LM2596"]
     ESP["E<br>S<br>P<br>3<br>2"]
-    Pot[Wired Controller]
-    Btn[Push Button]
-    StatusLED[Status LED]
-    BTS[BTS7960]
-    Motor((T02 Motor))
+    Pot["Wired Controller"]
+    Btn["Push Button"]
+    StatusLED["Status LED"]
+    BTS["BTS7960"]
+    Motor(("T02 Motor"))
 
     Power ===|"24V → LED"| Pot
     Power ===|"GND → LED"| Pot
