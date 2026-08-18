@@ -112,7 +112,7 @@ T02 순정 컨트롤러(내장 24V LED 포함)를 분리형 커넥터(GX16 등)�
     <tr>
       <td style="border: none;"><h1>⑤</h1><b style="color:#e74c3c;">(24V LED +)</b></td>
       <td style="border: none;"></td>
-      <td style="border: none;"><h1>①</h1><b style="color:#e67e22;">(3.3V 전원)</b></td>
+      <td style="border: none;"><h1>①</h1><b style="color:#e67e22;">(ESP32 3.3V)</b></td>
     </tr>
     <tr>
       <td style="border: none;"><br><h1>④</h1><b style="color:#34495e;">(24V LED -)</b><br>어댑터 GND</td>
