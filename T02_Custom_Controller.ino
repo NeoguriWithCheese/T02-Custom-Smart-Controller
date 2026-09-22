@@ -2256,14 +2256,10 @@ void setup()
       NimBLEDevice::getAdvertising();
 
 
-    // ========================================================
-    // [수정됨] 이름 앞에 1001 코드를 강제 주입하여 송출
-    // ========================================================
-    std::string advName = "";
-    advName += (char)0x10;
-    advName += (char)0x01;
-    advName += "HISMITH";
-    advertising->setName(advName);
+      // ========================================================
+      // 표준 Hismith 이름으로 노출 (이상한 바이트 제거)
+      // ========================================================
+      advertising->setName("HISMITH_52F1");
 
 
     advertising->addServiceUUID(
